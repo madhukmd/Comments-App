@@ -1,0 +1,106 @@
+/* * {
+  border: 1px solid blue;
+} */
+
+.amber {
+  background-color: #f59e0b;
+}
+
+.blue {
+  background-color: #0b69ff;
+}
+
+.orange {
+  background-color: #f97316;
+}
+
+.emerald {
+  background-color: #10b981;
+}
+
+.teal {
+  background-color: #14b8a6;
+}
+
+.red {
+  background-color: #b91c1c;
+}
+
+.light-blue {
+  background-color: #0ea5e9;
+}
+
+/* Write your CSS here */
+.list-container {
+  display: flex;
+  flex-direction: column;
+}
+.name-des-content {
+  display: flex;
+  /* flex-direction: column; */
+}
+.name-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.first-letter {
+  color: #ffffff;
+  font-size: 18px;
+}
+.likes-container {
+  display: flex;
+  align-items: center;
+  margin-top: 7px;
+}
+.icon {
+  border: none;
+  outline: none;
+  background-color: #ffffff;
+}
+.des {
+  margin-left: 10px;
+}
+.name-style {
+  font-family: 'Roboto';
+  font-size: 19px;
+  color: #1e293b;
+  font-weight: 500;
+  margin-top: 5px;
+}
+span {
+  font-size: 15px;
+  color: #475569;
+  font-weight: 400;
+  margin-left: 30px;
+}
+.paragraph {
+  font-family: 'Roboto';
+  font-size: 16px;
+  color: #475569;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+.margin {
+  margin-right: 20px;
+}
+.like-style {
+  font-family: 'Roboto';
+  font-size: 17px;
+}
+.like-color {
+  color: #7e858e;
+}
+.liked-color {
+  color: #0b69ff;
+}
+
+.delete {
+  margin-left: auto;
+}
+img {
+  width: 22px;
+}
