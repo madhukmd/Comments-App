@@ -11,7 +11,7 @@ const CommentItem = props => {
   const DeleteBtn =
     'https://assets.ccbp.in/frontend/react-js/comments-app/delete-img.png'
 
-  const Letter = name.slice(0, 1)
+  const Letter = name.slice(0, 1).toUpperCase()
   const likeItem = isLiked
     ? [liked, 'liked', 'liked-color']
     : [like, 'like', 'like-color']
@@ -38,25 +38,21 @@ const CommentItem = props => {
         </div>
       </div>
       <div className="likes-container">
-        <button type="button" className="icon margin">
-          <img src={likeItem[0]} alt={likeItem[1]} />
-        </button>
-
         <button
           type="button"
-          className={` icon like-style ${likeItem[2]}`}
-          alt={likeItem[1]}
+          className={`icon like-button ${likeItem[2]}`}
           onClick={getLike}
         >
+          <img src={likeItem[0]} alt={likeItem[1]} className="img-width mar" />
           Like
         </button>
-        <button type="button" className="icon delete" onClick={Delete}>
-          <img
-            src={DeleteBtn}
-            alt="delete"
-            className="delete-img"
-            data-testid="delete"
-          />
+        <button
+          type="button"
+          className="like-button"
+          onClick={Delete}
+          data-testid="delete"
+        >
+          <img src={DeleteBtn} alt="delete" className="like-button img-width" />
         </button>
       </div>
       <hr className="line" />
